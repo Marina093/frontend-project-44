@@ -9,11 +9,17 @@ const evenNumber = () => {
   while (i < 3) {
     const randomNumber = Math.round(Math.random() * 10);
     console.log('Question:', randomNumber);
-    const number = readlineSync.question('Your answer: ');
-    if ((number === 'yes' && randomNumber % 2 === 0) || (number === 'no' && randomNumber % 2 !== 0)) {
+    const answer = readlineSync.question('Your answer: ');
+    let corrAnswer = '';
+    if (randomNumber % 2 === 0) {
+      corrAnswer = 'yes';
+    } else {
+      corrAnswer = 'no';
+    }
+    if ((answer === 'yes' && randomNumber % 2 === 0) || (answer === 'no' && randomNumber % 2 !== 0)) {
       console.log('Correct!');
     } else {
-      console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${userName}!`);
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${corrAnswer}'.\nLet's try again, ${userName}!`);
       return false;
     }
     i += 1;
