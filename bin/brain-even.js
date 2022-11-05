@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import evenNumber from '../src/evn.js';
+import getBrainGameEven from '../games/evn.js';
 
-evenNumber();
+getBrainGameEven();
