@@ -10,7 +10,7 @@ const even = (randomNumber) => {
   } else {
     evenNum = 'no';
   }
-return evenNum;
+  return evenNum;
 };
 
 const setQuestionAnswer = () => {
@@ -19,9 +19,9 @@ const setQuestionAnswer = () => {
   const mathExpression = randomNumber;
   return [mathExpression, corrAnswer];
 };
-  
+
 const getBrainGameEven = () => {
   getBrainGames(mission, setQuestionAnswer);
-};   
-    
+};
+
 export default getBrainGameEven;
