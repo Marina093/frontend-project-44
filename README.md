@@ -1,3 +1,5 @@
+### brain-gcd
+https://asciinema.org/a/qvLAf1AbRM8aPbwM9IKDsORXy
 ### brain-calc
 https://asciinema.org/a/woz5oRGtRuzNq2P5FrNNpfWqi
 ### brain-even
