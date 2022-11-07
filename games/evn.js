@@ -1,4 +1,4 @@
-import randomNum from '../src/randomNum.js';
+import getRandomIntInclusive from '../src/randomNum.js';
 import getBrainGames from '../src/index.js';
 
 const mission = "Answer 'yes' if number even otherwise answer 'no'.";
@@ -14,7 +14,7 @@ const even = (randomNumber) => {
 };
 
 const setQuestionAnswer = () => {
-  const randomNumber = randomNum(10);
+  const randomNumber = getRandomIntInclusive(0, 10);
   const corrAnswer = even(randomNumber);
   const mathExpression = randomNumber;
   return [mathExpression, corrAnswer];
