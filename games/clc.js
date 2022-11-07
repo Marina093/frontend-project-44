@@ -1,4 +1,4 @@
-import randomNum from '../src/randomNum.js';
+import getRandomIntInclusive from '../src/randomNum.js';
 import getBrainGames from '../src/index.js';
 
 const mission = 'What is the result of the expression?';
@@ -18,9 +18,9 @@ const calculation = (x, y, symbol) => {
 };
 
 const setQuestionAnswer = () => {
-  const randomX = randomNum(10);
-  const randomY = randomNum(10);
-  const numOperation = randomNum(2);
+  const randomX = getRandomIntInclusive(0, 10);
+  const randomY = getRandomIntInclusive(0, 10);
+  const numOperation = getRandomIntInclusive(0, 2);
   const mathSymbol = mathOperations[numOperation];
   const corrAnswer = calculation(randomX, randomY, mathSymbol);
   const mathExpression = `${randomX} ${mathSymbol} ${randomY}`;
