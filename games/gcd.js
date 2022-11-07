@@ -1,4 +1,4 @@
-import randomNum from '../src/randomNum.js';
+import getRandomIntInclusive from '../src/randomNum.js';
 import getBrainGames from '../src/index.js';
 
 const mission = 'Find the greatest common divisor of given numbers.';
@@ -11,8 +11,8 @@ const gcd = (a, b) => {
 };
 
 const setQuestionAnswer = () => {
-  const randomX = randomNum(100);
-  const randomY = randomNum(100);
+  const randomX = getRandomIntInclusive(2, 100);
+  const randomY = getRandomIntInclusive(2, 100);
   const corrAnswer = gcd(randomX, randomY);
   const mathExpression = `${randomX} ${randomY}`;
   return [mathExpression, corrAnswer];
