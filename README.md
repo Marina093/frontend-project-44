@@ -3,11 +3,11 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/76506b906eeaaa2fa5ad/maintainability)](https://codeclimate.com/github/Marina093/frontend-project-44/maintainability) 
 
-### "Игры разума"
-Приложение, состоящее из пяти простых консольных игр, основанных на математической логике. 
-Каждая игра начинается со знакомства, далее перед игроком ставится задача-вопрос. Неверный ответ приводит к завершению игры, верный дает возможность перейти к следующей задаче. Всего в игре три раунда.
+<h1 align="center">"Игры разума"</h1>
+<h3>Приложение, состоящее из пяти простых консольных игр, основанных на математической логике. 
+Каждая игра начинается со знакомства, далее перед игроком ставится задача-вопрос. Неверный ответ приводит к завершению игры, верный дает возможность перейти к следующей задаче. Всего в игре три раунда.</h3>
 
-### Игры:
+## Игры:
 <ul>
  <li><b>brain-even.</b> Проверка на чётность.</li>
  <li><b>brain-calc.</b> Калькулятор.</li>
@@ -16,7 +16,7 @@
  <li><b>brain-prime.</b> Простое ли число?</li>
 </ul>
 
-### Инструкция по установке и запуску:
+## Инструкция по установке и запуску:
 
   <p>Игры запускаются в Ubuntu или Linux.</p>
   <p>Установите Node.js не ниже 13 версии в систему глобально.</p>
@@ -38,15 +38,15 @@
   npm ci    
   ```
 
-### Демонстрация игр по ссылкам:
+## Демонстрация игр по ссылкам:
 
-### brain-even
+## brain-even
 https://asciinema.org/a/MANMXuoVsoaCgreR56yzNtQHg
-### brain-calc
+## brain-calc
 https://asciinema.org/a/woz5oRGtRuzNq2P5FrNNpfWqi
-### brain-gcd
+## brain-gcd
 https://asciinema.org/a/qvLAf1AbRM8aPbwM9IKDsORXy
-### brain-progression
+## brain-progression
 https://asciinema.org/a/lZrTvYuytEMzFRptC0HJABbyN
-### brain-prime
+## brain-prime
 https://asciinema.org/a/LT91PBQVQdkLWMdt0vSUrBJJ6 
