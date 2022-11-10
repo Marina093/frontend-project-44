@@ -1,10 +1,13 @@
 ### Hexlet tests and linter status:
-[![Actions Status](https://github.com/Marina093/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Marina093/frontend-project-44/actions)
+![Actions Status](https://github.com/Marina093/frontend-project-44/workflows/hexlet-check/badge.svg)(https://github.com/Marina093/frontend-project-44/actions)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/76506b906eeaaa2fa5ad/maintainability)](https://codeclimate.com/github/Marina093/frontend-project-44/maintainability) 
+![Maintainability](https://api.codeclimate.com/v1/badges/76506b906eeaaa2fa5ad/maintainability)(https://codeclimate.com/github/Marina093/frontend-project-44/maintainability) 
 
 <h1 align="center">"Игры разума"</h1>
-<h3>Приложение, состоящее из пяти простых консольных игр, основанных на математической логике. Каждая игра начинается со знакомства, далее перед игроком ставится задача-вопрос. Неверный ответ приводит к завершению игры, верный дает возможность перейти к следующей задаче. Всего в игре три раунда.</h3>
+<p>Приложение, состоящее из пяти простых консольных игр, основанных на математической логике.</p> 
+<p>Каждая игра начинается со знакомства, далее перед игроком ставится задача-вопрос.</p>
+<p>Неверный ответ приводит к завершению игры, верный дает возможность перейти к следующей задаче.</p>
+<p>Всего в игре три раунда.</p>
 
 ## Игры:
 <ul>
