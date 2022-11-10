@@ -9,34 +9,50 @@
 
 ### Игры:
 <ul>
- <li>brain-even. Проверка на чётность.</li>
- <li>brain-calc. Калькулятор.</li>
- <li>brain-gcd. Hаибольший общий делитель (НОД).</li>
- <li>brain-progression. Арифметическая прогрессия.</li>
- <li>brain-prime. Простое ли число?</li>
+ <li><b>brain-even.</b> Проверка на чётность.</li>
+ <li><b>brain-calc.</b> Калькулятор.</li>
+ <li><b>brain-gcd.</b> Hаибольший общий делитель (НОД).</li>
+ <li><b>brain-progression.</b> Арифметическая прогрессия.</li>
+ <li><b>brain-prime.</b> Простое ли число?</li>
 </ul>
 
 ### Инструкция по установке и запуску:
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
 
-Игры запускаются в Ubuntu или Linux. 
-Установите Node.js не ниже 13 версии в систему глобально.
-<p>Игры запускаются в Ubuntu или Linux.</p>
-<p>Установите Node.js не ниже 13 версии в систему глобально.</p>
-<div style="background: lightgrey; box-sizing: border-box;">
-<p>sudo apt-get install curl</p>
-<p>curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -</p>
-<p>sudo apt install -y nodejs</p></div>
-<p>Проверьте версию установленного node.
-<span style="background: lightgrey; box-sizing: border-box;">node --version</span></p>
-<p>Инициализируйте npm-пакет внутри корневой директории.
-<span style="background: lightgrey; box-sizing: border-box;">npm init</span></p>
-<p>Проверьте версию.
-<span style="background: lightgrey; box-sizing: border-box;">npm --version</span></p>
-<p>Склонируйте репозиторий проекта локально.</p>
-<div style="background: lightgrey; box-sizing: border-box;">
-<p>git clone git@github.com:Marina093/frontend-project-44.git</p>
-<p>npm link</p>
-<p>npm ci</p></div>
+    <style>
+        div,
+	span {
+          background: rgb(212, 210, 210);
+          box-sizing: border-box;
+	  padding: 4px;
+	  border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+  <p>Игры запускаются в Ubuntu или Linux.</p>
+  <p>Установите Node.js не ниже 13 версии в систему глобально.</p>
+  <div>
+  <p>sudo apt-get install curl</p>
+  <p>curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -</p>
+  <p>sudo apt install -y nodejs</p></div>
+  <p>Проверьте версию установленного node.
+  <span>node --version</span></p>
+  <p>Инициализируйте npm-пакет внутри корневой директории.
+  <span>npm init</span></p>
+  <p>Проверьте версию.
+  <span>npm --version</span></p>
+  <p>Склонируйте репозиторий проекта локально.</p>
+  <div>
+  <p>git clone git@github.com:Marina093/frontend-project-44.git</p>
+  <p>npm link</p>
+  <p>npm ci</p></div>    
+</body>
+</html>
 
 ### Демонстрация игр по ссылкам:
 
