@@ -17,21 +17,26 @@
 </ul>
 
 ### Инструкция по установке и запуску:
+
 Игры запускаются в Ubuntu или Linux. 
 Установите Node.js не ниже 13 версии в систему глобально.
-<div style="background: lightgrey; box-sizing: border-box;">sudo apt-get install curl
-curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-sudo apt install -y nodejs</div>
-Проверьте версию установленного node.
-<div style="background: lightgrey; box-sizing: border-box;">node --version</div>
-Инициализируйте npm-пакет внутри корневой директории.
-<div style="background: lightgrey; box-sizing: border-box;">npm init</div> 
-Проверьте версию. 
-<div style="background: lightgrey; box-sizing: border-box;">npm --version</div> 
-Склонируйте репозиторий проекта локально. 
-<div style="background: lightgrey; box-sizing: border-box;">git clone git@github.com:Marina093/frontend-project-44.git
-npm link
-npm ci</div>
+<p>Игры запускаются в Ubuntu или Linux.</p>
+<p>Установите Node.js не ниже 13 версии в систему глобально.</p>
+<div style="background: lightgrey; box-sizing: border-box;">
+<p>sudo apt-get install curl</p>
+<p>curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -</p>
+<p>sudo apt install -y nodejs</p></div>
+<p>Проверьте версию установленного node.
+<span style="background: lightgrey; box-sizing: border-box;">node --version</span></p>
+<p>Инициализируйте npm-пакет внутри корневой директории.
+<span style="background: lightgrey; box-sizing: border-box;">npm init</span></p>
+<p>Проверьте версию.
+<span style="background: lightgrey; box-sizing: border-box;">npm --version</span></p>
+<p>Склонируйте репозиторий проекта локально.</p>
+<div style="background: lightgrey; box-sizing: border-box;">
+<p>git clone git@github.com:Marina093/frontend-project-44.git</p>
+<p>npm link</p>
+<p>npm ci</p></div>
 
 ### Демонстрация игр по ссылкам:
 
