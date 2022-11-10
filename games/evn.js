@@ -1,7 +1,7 @@
 import getRandomIntInclusive from '../src/randomNum.js';
 import getBrainGames from '../src/index.js';
 
-const mission = "Answer 'yes' if number even otherwise answer 'no'.";
+const mission = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const even = (randomNumber) => {
   let evenNum = '';
