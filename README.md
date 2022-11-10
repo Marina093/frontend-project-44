@@ -17,42 +17,23 @@
 </ul>
 
 ### Инструкция по установке и запуску:
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
 
-    <style>
-        div,
-	span {
-          background: rgb(212, 210, 210);
-          box-sizing: border-box;
-	  padding: 4px;
-	  border-radius: 4px;
-        }
-    </style>
-</head>
-<body>
   <p>Игры запускаются в Ubuntu или Linux.</p>
   <p>Установите Node.js не ниже 13 версии в систему глобально.</p>
-  <div>
-  <p>sudo apt-get install curl</p>
-  <p>curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -</p>
-  <p>sudo apt install -y nodejs</p></div>
-  <p>Проверьте версию установленного node.
-  <span>node --version</span></p>
-  <p>Инициализируйте npm-пакет внутри корневой директории.
-  <span>npm init</span></p>
-  <p>Проверьте версию.
-  <span>npm --version</span></p>
+  ```shell
+  sudo apt-get install curl
+  curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+  sudo apt install -y nodejs
+  ```
+  <p>Проверьте версию установленного node <code>node --version</code></p>
+  <p>Инициализируйте npm-пакет внутри корневой директории <code>npm init</code></p>
+  <p>Проверьте версию <code>npm --version</code></p>
   <p>Склонируйте репозиторий проекта локально.</p>
-  <div>
-  <p>git clone git@github.com:Marina093/frontend-project-44.git</p>
-  <p>npm link</p>
-  <p>npm ci</p></div>    
-</body>
-</html>
+  ```shell
+  git clone git@github.com:Marina093/frontend-project-44.git
+  npm link
+  npm ci    
+  ```
 
 ### Демонстрация игр по ссылкам:
 
