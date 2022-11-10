@@ -1,7 +1,7 @@
 ### brain-prime
 https://asciinema.org/a/LT91PBQVQdkLWMdt0vSUrBJJ6
-### brain-progress
-https://asciinema.org/a/lfFkqzTEemezcS8Xrskfzdp1j
+### brain-progression
+https://asciinema.org/a/lZrTvYuytEMzFRptC0HJABbyN
 ### brain-gcd
 https://asciinema.org/a/qvLAf1AbRM8aPbwM9IKDsORXy
 ### brain-calc
