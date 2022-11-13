@@ -3,19 +3,11 @@ import runBrainGames from '../index.js';
 
 const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const even = (randomNumber) => {
-  let evenNum = '';
-  if (randomNumber % 2 === 0) {
-    evenNum = 'yes';
-  } else {
-    evenNum = 'no';
-  }
-  return evenNum;
-};
+const isEven = (number) => number % 2 === 0;
 
 const getQuestionAnswer = () => {
   const question = getRandomIntInclusive(0, 10);
-  const corrAnswer = even(question);
+  const corrAnswer = isEven(question) ? 'yes' : 'no';
   return [question, corrAnswer];
 };
 
