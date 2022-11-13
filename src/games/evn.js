@@ -1,5 +1,5 @@
-import getRandomIntInclusive from '../src/randomNum.js';
-import getBrainGames from '../src/index.js';
+import getRandomIntInclusive from '../randomNum.js';
+import getBrainGames from '../index.js';
 
 const mission = 'Answer "yes" if the number is even, otherwise answer "no".';
 

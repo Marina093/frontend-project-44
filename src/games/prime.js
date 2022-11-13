@@ -1,5 +1,5 @@
-import getRandomIntInclusive from '../src/randomNum.js';
-import getBrainGames from '../src/index.js';
+import getRandomIntInclusive from '../randomNum.js';
+import getBrainGames from '../index.js';
 
 const mission = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
