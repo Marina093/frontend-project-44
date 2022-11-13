@@ -4,24 +4,22 @@ import runBrainGames from '../index.js';
 const rule = 'What is the result of the expression?';
 const mathOperations = ['+', '-', '*'];
 const calculation = (x, y, symbol) => {
-  let result = 0;
   switch (symbol) {
-    case '+': result = x + y;
-      break;
-    case '-': result = x - y;
-      break;
-    case '*': result = x * y;
-      break;
+    case '+':
+      return x + y;
+    case '-':
+      return x - y;
+    case '*':
+      return x * y;
     default:
       throw new Error('Unknown operation!');
   }
-  return result;
 };
 
 const getQuestionAnswer = () => {
   const firstNumber = getRandomIntInclusive(0, 10);
   const secondNumber = getRandomIntInclusive(0, 10);
-  const numOperation = getRandomIntInclusive(0, 2);
+  const numOperation = getRandomIntInclusive(0, mathOperations.length - 1);
   const mathSymbol = mathOperations[numOperation];
   const corrAnswer = calculation(firstNumber, secondNumber, mathSymbol);
   const question = `${firstNumber} ${mathSymbol} ${secondNumber}`;
