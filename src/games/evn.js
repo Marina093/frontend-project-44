@@ -1,7 +1,7 @@
 import getRandomIntInclusive from '../randomNum.js';
-import getBrainGames from '../index.js';
+import runBrainGames from '../index.js';
 
-const mission = 'Answer "yes" if the number is even, otherwise answer "no".';
+const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const even = (randomNumber) => {
   let evenNum = '';
@@ -13,15 +13,15 @@ const even = (randomNumber) => {
   return evenNum;
 };
 
-const setQuestionAnswer = () => {
+const getQuestionAnswer = () => {
   const randomNumber = getRandomIntInclusive(0, 10);
   const corrAnswer = even(randomNumber);
-  const mathExpression = randomNumber;
-  return [mathExpression, corrAnswer];
+  const question = randomNumber;
+  return [question, corrAnswer];
 };
 
-const getBrainGameEven = () => {
-  getBrainGames(mission, setQuestionAnswer);
+const runBrainGameEven = () => {
+  runBrainGames(rule, getQuestionAnswer);
 };
 
-export default getBrainGameEven;
+export default runBrainGameEven;

@@ -1,7 +1,7 @@
 import getRandomIntInclusive from '../randomNum.js';
-import getBrainGames from '../index.js';
+import runBrainGames from '../index.js';
 
-const mission = 'Find the greatest common divisor of given numbers.';
+const rule = 'Find the greatest common divisor of given numbers.';
 
 const gcd = (a, b) => {
   if (b === 0) {
@@ -10,16 +10,16 @@ const gcd = (a, b) => {
   return gcd(b, a % b);
 };
 
-const setQuestionAnswer = () => {
+const getQuestionAnswer = () => {
   const randomX = getRandomIntInclusive(2, 100);
   const randomY = getRandomIntInclusive(2, 100);
   const corrAnswer = gcd(randomX, randomY);
-  const mathExpression = `${randomX} ${randomY}`;
-  return [mathExpression, corrAnswer];
+  const question = `${randomX} ${randomY}`;
+  return [question, corrAnswer];
 };
 
-const getBrainGameGCD = () => {
-  getBrainGames(mission, setQuestionAnswer);
+const runBrainGameGCD = () => {
+  runBrainGames(rule, getQuestionAnswer);
 };
 
-export default getBrainGameGCD;
+export default runBrainGameGCD;

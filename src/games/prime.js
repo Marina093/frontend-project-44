@@ -1,7 +1,7 @@
 import getRandomIntInclusive from '../randomNum.js';
-import getBrainGames from '../index.js';
+import runBrainGames from '../index.js';
 
-const mission = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const prime = (n) => {
   let answer = '';
@@ -18,15 +18,15 @@ const prime = (n) => {
   return answer;
 };
 
-const setQuestionAnswer = () => {
+const getQuestionAnswer = () => {
   const randomNum = getRandomIntInclusive(0, 100);
   const corrAnswer = prime(randomNum);
-  const mathExpression = `${randomNum}`;
-  return [mathExpression, corrAnswer];
+  const question = `${randomNum}`;
+  return [question, corrAnswer];
 };
 
-const getBrainGamePrime = () => {
-  getBrainGames(mission, setQuestionAnswer);
+const runBrainGamePrime = () => {
+  runBrainGames(rule, getQuestionAnswer);
 };
 
-export default getBrainGamePrime;
+export default runBrainGamePrime;

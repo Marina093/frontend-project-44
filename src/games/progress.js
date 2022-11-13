@@ -1,7 +1,7 @@
 import getRandomIntInclusive from '../randomNum.js';
-import getBrainGames from '../index.js';
+import runBrainGames from '../index.js';
 
-const mission = 'What number is missing in the progression?';
+const rule = 'What number is missing in the progression?';
 
 const progression = (startNum, step, position) => {
   let corrAnswer = '';
@@ -20,16 +20,16 @@ const progression = (startNum, step, position) => {
   return [arithProgression, corrAnswer];
 };
 
-const setQuestionAnswer = () => {
+const getQuestionAnswer = () => {
   const startNum = getRandomIntInclusive(0, 100);
   const step = getRandomIntInclusive(1, 10);
   const position = getRandomIntInclusive(0, 9);
-  const [mathExpression, corrAnswer] = progression(startNum, step, position);
-  return [mathExpression, corrAnswer];
+  const [question, corrAnswer] = progression(startNum, step, position);
+  return [question, corrAnswer];
 };
 
-const getBrainGameProgression = () => {
-  getBrainGames(mission, setQuestionAnswer);
+const runBrainGameProgression = () => {
+  runBrainGames(rule, getQuestionAnswer);
 };
 
-export default getBrainGameProgression;
+export default runBrainGameProgression;
