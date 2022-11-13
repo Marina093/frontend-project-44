@@ -2,7 +2,13 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "type": "module",
-  "description": "[![Actions Status](https://github.com/Marina093/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Marina093/frontend-project-44/actions)",
+  "description": "Brain games - first project",
+  "keywords": [
+    "brain",
+    "games",
+    "first",
+    "project"
+    ],
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
@@ -19,7 +25,7 @@
     "type": "git",
     "url": "git+https://github.com/Marina093/frontend-project-44.git"
   },
-  "author": "",
+  "author": "Marina Kucheriavenko",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Marina093/frontend-project-44/issues"
