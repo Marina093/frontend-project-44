@@ -15,7 +15,7 @@ const getQuestionAnswer = () => {
   const secondNumber = getRandomIntInclusive(2, 100);
   const corrAnswer = findGCD(firstNumber, secondNumber);
   const question = `${firstNumber} ${secondNumber}`;
-  return [question, corrAnswer];
+  return [question, corrAnswer.toString()];
 };
 
 const runBrainGameGCD = () => {

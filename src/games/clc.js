@@ -23,7 +23,7 @@ const getQuestionAnswer = () => {
   const mathSymbol = mathOperations[numOperation];
   const corrAnswer = calculation(firstNumber, secondNumber, mathSymbol);
   const question = `${firstNumber} ${mathSymbol} ${secondNumber}`;
-  return [question, corrAnswer];
+  return [question, corrAnswer.toString()];
 };
 
 const runBrainGameCalc = () => {

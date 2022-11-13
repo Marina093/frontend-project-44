@@ -19,7 +19,7 @@ const getQuestionAnswer = () => {
   const corrAnswer = progression[emptyPosition];
   progression[emptyPosition] = '..';
   const question = progression.join(' ');
-  return [question, corrAnswer];
+  return [question, corrAnswer.toString()];
 };
 
 const runBrainGameProgression = () => {
