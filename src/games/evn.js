@@ -14,9 +14,8 @@ const even = (randomNumber) => {
 };
 
 const getQuestionAnswer = () => {
-  const randomNumber = getRandomIntInclusive(0, 10);
-  const corrAnswer = even(randomNumber);
-  const question = randomNumber;
+  const question = getRandomIntInclusive(0, 10);
+  const corrAnswer = even(question);	
   return [question, corrAnswer];
 };
 
