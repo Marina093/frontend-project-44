@@ -3,17 +3,17 @@ import runBrainGames from '../index.js';
 
 const rule = 'Find the greatest common divisor of given numbers.';
 
-const gcd = (a, b) => {
+const findGCD = (a, b) => {
   if (b === 0) {
     return a;
   }
-  return gcd(b, a % b);
+  return findGCD(b, a % b);
 };
 
 const getQuestionAnswer = () => {
   const firstNumber = getRandomIntInclusive(2, 100);
   const secondNumber = getRandomIntInclusive(2, 100);
-  const corrAnswer = gcd(firstNumber, secondNumber);
+  const corrAnswer = findGCD(firstNumber, secondNumber);
   const question = `${firstNumber} ${secondNumber}`;
   return [question, corrAnswer];
 };
