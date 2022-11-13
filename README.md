@@ -36,7 +36,7 @@
   ```properties
   git clone git@github.com:Marina093/frontend-project-44.git
   npm link
-  npm ci    
+  make install    
   ```
 
 ## Демонстрация игр по ссылкам:
