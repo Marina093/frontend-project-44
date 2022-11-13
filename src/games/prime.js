@@ -3,24 +3,17 @@ import runBrainGames from '../index.js';
 
 const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const prime = (n) => {
-  let answer = '';
-  if (n < 2) {
-    return 'no';
+const isPrime = (number) => {
+  if (number < 2) return false;
+  for (let j = 2; j <= number / 2; j += 1) {
+    if (number % j === 0) return false;
   }
-  for (let j = 2; j <= n; j += 1) {
-    if (n % j === 0 && j !== n) {
-      return 'no';
-    } if (j === n) {
-      answer = 'yes';
-    }
-  }
-  return answer;
+  return true;
 };
 
 const getQuestionAnswer = () => {
   const question = getRandomIntInclusive(0, 100);
-  const corrAnswer = prime(question);
+  const corrAnswer = isPrime(question) ? 'yes' : 'no';
   return [question, corrAnswer];
 };
 
