@@ -21,10 +21,10 @@ const progression = (startNum, step, position) => {
 };
 
 const getQuestionAnswer = () => {
-  const startNum = getRandomIntInclusive(0, 100);
-  const step = getRandomIntInclusive(1, 10);
-  const position = getRandomIntInclusive(0, 9);
-  const [question, corrAnswer] = progression(startNum, step, position);
+  const firstNumber = getRandomIntInclusive(0, 100);
+  const stepProgression = getRandomIntInclusive(1, 10);
+  const emptyPosition = getRandomIntInclusive(0, 9);
+  const [question, corrAnswer] = progression(firstNumber, stepProgression, emptyPosition);
   return [question, corrAnswer];
 };
 
