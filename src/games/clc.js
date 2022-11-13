@@ -13,7 +13,7 @@ const calculation = (x, y, symbol) => {
     case '*': result = x * y;
       break;
     default:
-      throw new Error('Unknown operation!');		  
+      throw new Error('Unknown operation!');
   }
   return result;
 };
