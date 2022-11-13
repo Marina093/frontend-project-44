@@ -11,10 +11,10 @@ const gcd = (a, b) => {
 };
 
 const getQuestionAnswer = () => {
-  const randomX = getRandomIntInclusive(2, 100);
-  const randomY = getRandomIntInclusive(2, 100);
-  const corrAnswer = gcd(randomX, randomY);
-  const question = `${randomX} ${randomY}`;
+  const firstNumber = getRandomIntInclusive(2, 100);
+  const secondNumber = getRandomIntInclusive(2, 100);
+  const corrAnswer = gcd(firstNumber, secondNumber);
+  const question = `${firstNumber} ${secondNumber}`;
   return [question, corrAnswer];
 };
 

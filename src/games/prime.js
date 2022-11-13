@@ -19,9 +19,8 @@ const prime = (n) => {
 };
 
 const getQuestionAnswer = () => {
-  const randomNum = getRandomIntInclusive(0, 100);
-  const corrAnswer = prime(randomNum);
-  const question = `${randomNum}`;
+  const question = getRandomIntInclusive(0, 100);
+  const corrAnswer = prime(question);
   return [question, corrAnswer];
 };
 
