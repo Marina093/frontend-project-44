@@ -3,6 +3,8 @@ import runBrainGames from '../index.js';
 
 const rule = 'What is the result of the expression?';
 const mathOperations = ['+', '-', '*'];
+const leftLimit = 0;
+const rightLimit = 10;
 const calculate = (x, y, symbol) => {
   switch (symbol) {
     case '+':
@@ -17,8 +19,6 @@ const calculate = (x, y, symbol) => {
 };
 
 const getQuestionAnswer = () => {
-  const leftLimit = 0;
-  const rightLimit = 10;
   const firstNumber = getRandomIntInclusive(leftLimit, rightLimit);
   const secondNumber = getRandomIntInclusive(leftLimit, rightLimit);
   const numOperation = getRandomIntInclusive(leftLimit, mathOperations.length - 1);

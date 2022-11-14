@@ -2,6 +2,12 @@ import getRandomIntInclusive from '../randomNum.js';
 import runBrainGames from '../index.js';
 
 const rule = 'What number is missing in the progression?';
+const leftLimit = 0;
+const rightLimit = 100;
+const minStep = 1;
+const maxStep = 10;
+const minNumPosition = 0;
+const maxNumPosition = 9;
 
 const createProgression = (startNum, step) => {
   const arithProgression = [];
@@ -12,12 +18,6 @@ const createProgression = (startNum, step) => {
 };
 
 const getQuestionAnswer = () => {
-  const leftLimit = 0;
-  const rightLimit = 100;
-  const minStep = 1;
-  const maxStep = 10;
-  const minNumPosition = 0;
-  const maxNumPosition = 9;
   const firstNumber = getRandomIntInclusive(leftLimit, rightLimit);
   const stepProgression = getRandomIntInclusive(minStep, maxStep);
   const emptyPosition = getRandomIntInclusive(minNumPosition, maxNumPosition);

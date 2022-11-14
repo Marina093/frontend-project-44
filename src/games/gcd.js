@@ -2,6 +2,8 @@ import getRandomIntInclusive from '../randomNum.js';
 import runBrainGames from '../index.js';
 
 const rule = 'Find the greatest common divisor of given numbers.';
+const leftLimit = 2;
+const rightLimit = 100;
 
 const findGCD = (a, b) => {
   if (b === 0) {
@@ -11,8 +13,6 @@ const findGCD = (a, b) => {
 };
 
 const getQuestionAnswer = () => {
-  const leftLimit = 2;
-  const rightLimit = 100;
   const firstNumber = getRandomIntInclusive(leftLimit, rightLimit);
   const secondNumber = getRandomIntInclusive(leftLimit, rightLimit);
   const corrAnswer = findGCD(firstNumber, secondNumber);

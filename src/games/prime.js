@@ -2,6 +2,8 @@ import getRandomIntInclusive from '../randomNum.js';
 import runBrainGames from '../index.js';
 
 const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const leftLimit = 0;
+const rightLimit = 100;
 
 const isPrime = (number) => {
   if (number < 2) return false;
@@ -12,8 +14,6 @@ const isPrime = (number) => {
 };
 
 const getQuestionAnswer = () => {
-  const leftLimit = 0;
-  const rightLimit = 100;
   const question = getRandomIntInclusive(leftLimit, rightLimit);
   const corrAnswer = isPrime(question) ? 'yes' : 'no';
   return [question, corrAnswer];
