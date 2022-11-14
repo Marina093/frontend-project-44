@@ -14,8 +14,7 @@ const runBrainGames = (rule, getQuestionAnswer) => {
     if (answer === corrAnswer) {
       console.log('Correct!');
     } else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${corrAnswer}'.\nLet's try again, ${userName}!`);
-      return false;
+      return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${corrAnswer}'.\nLet's try again, ${userName}!`);
     }
   }
   return console.log(`Congratulations, ${userName}!`);
