@@ -12,7 +12,9 @@ const isPrime = (number) => {
 };
 
 const getQuestionAnswer = () => {
-  const question = getRandomIntInclusive(0, 100);
+  const leftLimit = 0;
+  const rightLimit = 100;
+  const question = getRandomIntInclusive(leftLimit, rightLimit);
   const corrAnswer = isPrime(question) ? 'yes' : 'no';
   return [question, corrAnswer];
 };

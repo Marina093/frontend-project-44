@@ -17,9 +17,11 @@ const calculate = (x, y, symbol) => {
 };
 
 const getQuestionAnswer = () => {
-  const firstNumber = getRandomIntInclusive(0, 10);
-  const secondNumber = getRandomIntInclusive(0, 10);
-  const numOperation = getRandomIntInclusive(0, mathOperations.length - 1);
+  const leftLimit = 0;
+  const rightLimit = 10;
+  const firstNumber = getRandomIntInclusive(leftLimit, rightLimit);
+  const secondNumber = getRandomIntInclusive(leftLimit, rightLimit);
+  const numOperation = getRandomIntInclusive(leftLimit, mathOperations.length - 1);
   const mathSymbol = mathOperations[numOperation];
   const corrAnswer = calculate(firstNumber, secondNumber, mathSymbol);
   const question = `${firstNumber} ${mathSymbol} ${secondNumber}`;

@@ -12,9 +12,15 @@ const createProgression = (startNum, step) => {
 };
 
 const getQuestionAnswer = () => {
-  const firstNumber = getRandomIntInclusive(0, 100);
-  const stepProgression = getRandomIntInclusive(1, 10);
-  const emptyPosition = getRandomIntInclusive(0, 9);
+  const leftLimit = 0;
+  const rightLimit = 100;
+  const minStep = 1;
+  const maxStep = 10;
+  const minNumPosition = 0;
+  const maxNumPosition = 9;
+  const firstNumber = getRandomIntInclusive(leftLimit, rightLimit);
+  const stepProgression = getRandomIntInclusive(minStep, maxStep);
+  const emptyPosition = getRandomIntInclusive(minNumPosition, maxNumPosition);
   const progression = createProgression(firstNumber, stepProgression);
   const corrAnswer = progression[emptyPosition];
   progression[emptyPosition] = '..';

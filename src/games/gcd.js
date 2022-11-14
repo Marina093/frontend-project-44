@@ -11,8 +11,10 @@ const findGCD = (a, b) => {
 };
 
 const getQuestionAnswer = () => {
-  const firstNumber = getRandomIntInclusive(2, 100);
-  const secondNumber = getRandomIntInclusive(2, 100);
+  const leftLimit = 2;
+  const rightLimit = 100;
+  const firstNumber = getRandomIntInclusive(leftLimit, rightLimit);
+  const secondNumber = getRandomIntInclusive(leftLimit, rightLimit);
   const corrAnswer = findGCD(firstNumber, secondNumber);
   const question = `${firstNumber} ${secondNumber}`;
   return [question, corrAnswer.toString()];
